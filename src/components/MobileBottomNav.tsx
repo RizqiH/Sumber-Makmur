@@ -48,10 +48,10 @@ export default function MobileBottomNav() {
   return (
     <>
       {/* Spacer to prevent content from being hidden behind bottom nav */}
-      <div className="h-20 md:hidden"></div>
+ 
       
       {/* Bottom Navigation - Only visible on mobile */}
-      <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-neutral-200 md:hidden z-50 animate-slide-up">
+      <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-neutral-200 md:hidden z-50 ">
         <div className="grid grid-cols-4 h-16">
           {navItems.map((item) => {
             const isActive = pathname === item.href;
